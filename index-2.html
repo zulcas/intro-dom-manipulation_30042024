@@ -57,8 +57,25 @@
         }
 
         /** Ejercicio 1: Coloca cada uno de los valores de cada propiedad del objeto en el nodo DOM y propiedad correspondiente. Por ejemplo, el valor al propiedad 'name' debe ser asignada al nodo <h1> */
+        //1)valor name
+        document.querySelector("#product-name").textContent = productData.name;
+        //2)Imagen
+        document.querySelector("img").src = productData.imageURL;
+        //3)Precio
+        document.querySelector(".price").textContent = `$${productData.price}`;
+        //4)Descripción
+        document.querySelector("#description").textContent = productData.description
 
         /** Ejercicio 2: Queremos pintar de color verde la letra del precio del artículo, si su valor es menor o igual a 2000. En caso contrario, lo pintaremos de color rojo. Para probar esto, simplemente cambia el precio del artículo */
+        let priceElement = document.querySelector(".price").textContent;
+        priceElement = priceElement.slice(1,); 
+        console.log(priceElement);
+        if(priceElement <= 2000){ //sin variable intermedia (document.querySelector(".price").textContent.slice(1,))
+            document.querySelector(".price").style.color = "green";
+        }
+        else{
+            document.querySelector(".price").style.color = "red";
+        }
 
 
     </script>

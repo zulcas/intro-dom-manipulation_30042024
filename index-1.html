@@ -52,18 +52,30 @@
         // Cada ejercicio se resuelve con una línea de código o dos. NO MODIFIQUES EL HTML
 
         // 0. Muestra por consola el texto del nodo h2.
+        console.log(document.querySelector("h2").textContent);
 
         // 0b. Muestra por consola el texto del nodo h1
+        console.log(document.querySelector("h1").textContent);
 
         // 1. Muestra por la consola el valor de la propiedad 'src' de la imagen
+        console.log(document.querySelector("img").src.textContent);
 
         // 2. Muestra por consola la descripción de este artículo
+        console.log(document.querySelector("#description").textContent);
 
         // 3. Muestra el precio del producto por consola
+        console.log(document.querySelector(".price").textContent);
 
         // 4. COMPLICADO. Muestra por consola el valor del estilo en línea 'width' del tag <img>
+        console.log(document.querySelector("img").style.width);
 
         // 5. DIFÍCIL: Aplica un 21% al precio de este producto y muéstralo por consola
+        let priceString = document.querySelector(".price").textContent;
+        priceString = priceString.slice(1,);
+
+        document.querySelector(".price").textContent = `$${(1.21*priceString).toFixed(2)}`
+
+        //sin variable intermadia, priceString == document.querySelector(".price").textContent.slice(1,)
      
     </script>
 
