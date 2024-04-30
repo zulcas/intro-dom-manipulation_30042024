@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="header" style="text-align:center">Product Card</h2>
+
+
+    <div class="card">
+        <img src="" alt="Denim Jeans" style="width:100%">
+        <h1 id="product-name">xxx</h1>
+        <p class="price">price</p>
+        <p id="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun
+            denim lorem jeansum.
+        </p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <script>
+        let productData = {
+            name: "Computer",
+            imageURL: "https://img.freepik.com/free-photo/desktop-computer-with-keyboard-mouse-table-3d-rendering_1142-41362.jpg",
+            price: 2000,
+            description: "A Good Computer"
+        }
+
+        /** Ejercicio 1: Coloca cada uno de los valores de cada propiedad del objeto en el nodo DOM y propiedad correspondiente. Por ejemplo, el valor al propiedad 'name' debe ser asignada al nodo <h1> */
+
+        /** Ejercicio 2: Queremos pintar de color verde la letra del precio del artículo, si su valor es menor o igual a 2000. En caso contrario, lo pintaremos de color rojo. Para probar esto, simplemente cambia el precio del artículo */
+
+
+    </script>
+</body>
+
+</html>
